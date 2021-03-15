@@ -1,0 +1,58 @@
+//Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap');
+
+//Variables
+$-color-white: #ffffff;
+$-color-dark-grey: #494949;
+$-color-sand: #CEC3AE;
+$-color-dark-green: #274438;
+$-color-black-1: #111111;
+
+
+//Inital Setup
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #444;
+  font-family: 'Lora', serif;
+}
+
+.header {
+  height: 100vh;
+  background-size: cover;
+  background-image: linear-gradient(rgba(255,255,255,.97), rgba(255,255,255,.97)), url("images/4K.png") ;
+
+  display: flex;
+  align-items: center;
+
+}
+
+//Product
+.product-box {
+  background: #CEC3AE;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  //align-items: flex-end;
+}
+
+.product-image-box {
+  flex: 0 0 45%;
+  background: indianred;
+
+}
+
+.product-description-box {
+  flex: 1;
+  background: #274438;
+}
+
+//Image
+.product-image {
+  width: 100%;
+  display: block;
+}
