@@ -19,6 +19,7 @@ $-color-black-1: #111111;
 body {
   color: #444;
   font-family: 'Lora', serif;
+  line-height: 1.6;
 }
 
 .header {
@@ -27,32 +28,72 @@ body {
   background-image: linear-gradient(rgba(255,255,255,.97), rgba(255,255,255,.97)), url("images/4K.png") ;
 
   display: flex;
-  align-items: center;
+  align-items: center; //Cross Axis
+  justify-content: center; //Main Axis
 
 }
 
 //Product
 .product-box {
-  background: #CEC3AE;
-  max-width: 800px;
+  //background: #CEC3AE;
+  //max-width: 1200px;
+  width: 1000px;
   display: flex;
   align-items: center;
   //align-items: flex-end;
 }
 
 .product-image-box {
-  flex: 0 0 45%;
-  background: indianred;
+  //flex: 0 0 40%;
+  flex: 0 0 30%;
+  //background: indianred;
+  //align-self: flex-end;
 
 }
 
 .product-description-box {
   flex: 1;
-  background: #274438;
+  //background: #274438;
+  text-align: center;
 }
 
 //Image
 .product-image {
-  width: 100%;
+  //width: 100%;
+  width: 300px;
   display: block;
+}
+
+.heading-one {
+  font-size: 45px;
+  color: $-color-dark-green;
+  text-transform: uppercase;
+
+  &-span-1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: $-color-black-1;
+
+  }
+
+  &-span-2 {
+    display: block;
+    width: 80%;
+    margin: 10px auto 20px auto;
+    //margin-top: 10px;
+    font-size: 24px;
+    color: $-color-dark-green;
+
+  }
+}
+
+.btn-buy {
+  //margin-top: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: $-color-white;
+  background: #274438;
+  border: 1px solid #274438;
+  box-sizing: border-box;
+  border-radius: 50px;
 }
