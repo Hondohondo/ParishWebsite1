@@ -16,6 +16,10 @@ $-color-black-1: #111111;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   //color: #444;
   font-family: 'Lora', serif;
@@ -36,6 +40,7 @@ body {
 }
 
 .main-nav {
+  padding-top: 10px;
   display: flex;
 
   width: 1000px;
@@ -48,7 +53,7 @@ body {
   &-list {
     list-style: none;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 18px;
 
     &-item
     {
@@ -73,6 +78,7 @@ body {
 
   .black {
     background-color: $-color-black-1 !important;
+    font-size: 16px !important;
   }
 }
 
@@ -136,7 +142,8 @@ body {
     width: 80%;
     margin: 10px auto 20px auto;
     //margin-top: 10px;
-    font-size: 24px;
+    font-size: 22px;
+    font-weight: bold;
     color: $-color-dark-green;
 
   }
@@ -166,9 +173,22 @@ body {
 
 }
 
+///////////////////////
+/////////SECTION ONE
+
+.separator {
+  text-align: center;
+}
+
+.image-separator {
+  height: 30px;
+  opacity: 70%;
+}
+
+
 .section-one {
   //width: 1200px;
-  padding: 60px 0px;
+  padding: 80px 0px 60px 0px;
   background: $-color-dark-green;
 }
 
@@ -227,7 +247,7 @@ body {
 }
 
 .section-two {
-  padding: 100px 0px;
+  padding: 80px 0px;
   background: $-color-sand;
 }
 
@@ -238,7 +258,7 @@ body {
 .story-box {
   width: 1000px;
   //background-color: indianred;
-  margin: 0 auto;
+  margin: 30px auto 0 auto;
 
   display: flex;
   justify-content: space-between;

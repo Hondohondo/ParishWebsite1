@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Lora", serif;
   line-height: 1.6;
@@ -19,6 +23,7 @@ body {
 }
 
 .main-nav {
+  padding-top: 10px;
   display: flex;
   width: 1000px;
   margin: 0 auto;
@@ -30,7 +35,7 @@ body {
 .main-nav-list {
   list-style: none;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 18px;
 }
 .main-nav-list-item {
   display: inline-block;
@@ -46,6 +51,7 @@ body {
 }
 .main-nav .black {
   background-color: #111111 !important;
+  font-size: 16px !important;
 }
 
 .header-logo {
@@ -91,7 +97,8 @@ body {
   display: block;
   width: 80%;
   margin: 10px auto 20px auto;
-  font-size: 24px;
+  font-size: 22px;
+  font-weight: bold;
   color: #274438;
 }
 
@@ -112,8 +119,17 @@ body {
   color: #CEC3AE;
 }
 
+.separator {
+  text-align: center;
+}
+
+.image-separator {
+  height: 30px;
+  opacity: 70%;
+}
+
 .section-one {
-  padding: 60px 0px;
+  padding: 80px 0px 60px 0px;
   background: #274438;
 }
 
@@ -156,7 +172,7 @@ body {
 }
 
 .section-two {
-  padding: 100px 0px;
+  padding: 80px 0px;
   background: #CEC3AE;
 }
 
@@ -166,7 +182,7 @@ body {
 
 .story-box {
   width: 1000px;
-  margin: 0 auto;
+  margin: 30px auto 0 auto;
   display: flex;
   justify-content: space-between;
   font-size: 24px;
