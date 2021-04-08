@@ -43,7 +43,8 @@ body {
   padding-top: 10px;
   display: flex;
 
-  width: 1000px;
+  //width: 1000px;
+  width: 1140px;
   margin: 0 auto;
   color: $-color-black-1;
   color: $-color-dark-green;
@@ -84,7 +85,6 @@ body {
 
 .header-logo {
   width: 175px;
-
 }
 
 //Product
@@ -95,7 +95,8 @@ body {
   transform: translate(-50%, -50%);
   //background: #CEC3AE;
   //max-width: 1200px;
-  width: 1000px;
+  //width: 1000px;
+  width: 1140px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -188,13 +189,14 @@ body {
 
 .section-one {
   //width: 1200px;
-  padding: 80px 0px 60px 0px;
+  padding: 80px 0 60px 0;
   background: $-color-dark-green;
 }
 
 .heading-two {
   font-size: 40px;
   color: $-color-white;
+  //color: $-color-sand;
   text-transform: uppercase;
   text-align: center;
   font-weight: normal;
@@ -232,7 +234,8 @@ body {
 .coffee-2 {
   display: block;
   width: 300px;
-  border: 5px solid #FFFFFF;
+  //border: 5px solid #FFFFFF;
+  border: 5px solid $-color-sand;
   border-radius: 50px;
 }
 
@@ -240,14 +243,72 @@ body {
 // SECTION MIDDLE
 
 .section-middle {
-  height: 90vh;
+  //height: 90vh;
+  padding: 120px 0 70px 0;
   background-size: cover;
-  background-image: linear-gradient(rgba(255,255,255,.97), rgba(255,255,255,.97)), url("images/4K.png") ;
+  background-image: linear-gradient(rgba(255,255,255,.975), rgba(255,255,255,.975)), url("images/4K.png") ;
 
 }
 
+.middle-box {
+  display: flex;
+  width: 1140px;
+  margin: 50px auto 0 auto;
+  justify-content: center;
+  align-items: center;
+
+  &-image {
+    flex-basis: 50%;
+    text-align: right;
+    padding-right: 3%;
+
+  }
+
+  &-description {
+    font-size: 18px;
+    flex-basis: 50%;
+    padding-left: 3%;
+
+  }
+}
+
+.middle-image {
+  display: block;
+  //width: 60%;
+  //width: 100%;
+  border: 5px solid $-color-sand;
+  //border: 5px solid $-color-dark-green;
+  border-radius: 50px;
+  width: 100%;
+
+}
+
+.middle-description {
+  margin-bottom: 40px;
+
+  div {
+    color: $-color-dark-green;
+    //border: 2px solid $-color-dark-green;
+    border: 1.5px solid $-color-dark-green;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 24px;
+    margin-right: 25px;
+  }
+}
+
+/*.middle-description div {
+  color: red;
+}*/
+
+
 .section-two {
-  padding: 80px 0px;
+  padding: 80px 0;
   background: $-color-sand;
 }
 

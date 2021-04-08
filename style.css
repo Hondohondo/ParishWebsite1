@@ -25,7 +25,7 @@ body {
 .main-nav {
   padding-top: 10px;
   display: flex;
-  width: 1000px;
+  width: 1140px;
   margin: 0 auto;
   color: #111111;
   color: #274438;
@@ -63,7 +63,7 @@ body {
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 1000px;
+  width: 1140px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -129,7 +129,7 @@ body {
 }
 
 .section-one {
-  padding: 80px 0px 60px 0px;
+  padding: 80px 0 60px 0;
   background: #274438;
 }
 
@@ -161,18 +161,63 @@ body {
 .coffee-2 {
   display: block;
   width: 300px;
-  border: 5px solid #FFFFFF;
+  border: 5px solid #CEC3AE;
   border-radius: 50px;
 }
 
 .section-middle {
-  height: 90vh;
+  padding: 120px 0 70px 0;
   background-size: cover;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.97)), url("images/4K.png");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.975), rgba(255, 255, 255, 0.975)), url("images/4K.png");
 }
 
+.middle-box {
+  display: flex;
+  width: 1140px;
+  margin: 50px auto 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.middle-box-image {
+  flex-basis: 50%;
+  text-align: right;
+  padding-right: 3%;
+}
+.middle-box-description {
+  font-size: 18px;
+  flex-basis: 50%;
+  padding-left: 3%;
+}
+
+.middle-image {
+  display: block;
+  border: 5px solid #CEC3AE;
+  border-radius: 50px;
+  width: 100%;
+}
+
+.middle-description {
+  margin-bottom: 40px;
+}
+.middle-description div {
+  color: #274438;
+  border: 1.5px solid #274438;
+  display: inline-block;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  padding: 5px;
+  float: left;
+  font-size: 24px;
+  margin-right: 25px;
+}
+
+/*.middle-description div {
+  color: red;
+}*/
 .section-two {
-  padding: 80px 0px;
+  padding: 80px 0;
   background: #CEC3AE;
 }
 

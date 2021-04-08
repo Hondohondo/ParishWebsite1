@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap');
+
+//Variables
+$-color-white: #ffffff;
+$-color-dark-grey: #494949;
+$-color-sand: #CEC3AE;
+$-color-dark-green: #274438;
+$-color-black-1: #111111;
+
+/* Big Tablets to 1200px: Width small than the 1140px row*/
+/*Our container is 1140px - we want the website to change look when it gets close to this value (1140px)-so that we always have some margins on the right and left side*/
+@media only screen and (max-width: 1200px) {
+
+  .main-nav {
+    //width: 100%;
+    padding: 0 2%;
+
+    &-list {
+      list-style: none;
+      text-transform: uppercase;
+      font-size: 18px;
+
+      &-item
+      {
+        display: inline-block;
+        padding: 10px;
+      }
+
+      &-item-link:link,
+      &-item-link:visited
+      {
+        color: $-color-dark-green;
+        text-decoration: none;
+        transition: all .2s;
+      }
+
+      &-item-link:hover,
+      &-item-link:active
+      {
+        color: $-color-sand;
+      }
+    }
+
+    .black {
+      background-color: $-color-black-1 !important;
+      font-size: 16px !important;
+    }
+  }
+
+  .product-box {
+
+    width: 100%;
+    padding: 0 2%;
+
+  }
+
+
+}
+
+
+/* Small Tablets to Big Tablets: From 768px which is the Ipad to 1023px (Target Devices such as Ipad*/
+@media only screen and (max-width: 1023px) {
+
+  body {
+    //font-size: ;
+  }
+
+  .heading-one {
+    font-size: 40px;
+
+    &-span-1 {
+      font-size: 22px;
+
+    }
+
+    &-span-2 {
+      font-size: 20px;
+    }
+  }
+
+  .heading-two {
+    font-size: 36px;
+  }
+
+  .para-copy {
+    font-size: 20px;
+  }
+
+
+
+
+
+  .coffee-images {
+    width: 100%;
+    //margin: 60px auto -100px auto;
+  }
+
+  .story-box {
+    width: 100%;
+    //margin: 30px auto 0 auto;
+    padding: 2%;
+    font-size: 20px;
+
+  }
+
+  .story-image {
+
+    flex-basis: 30%;
+    margin-right: 10px;
+
+    .bio-image {
+    }
+
+    .bio-name {
+    }
+
+    .bio-title {
+    }
+
+  }
+
+
+  .story-description {
+    flex-basis: 50%;
+
+    .story-para {
+      width: 75%;
+    }
+
+    .story-para::before {
+      display: block;
+      font-family: serif;
+      content: "\201C";
+      //font-size: 500%;
+      font-size: 150px;
+      position: absolute;
+      top: -75px;
+      left: -35px;
+      color: $-color-sand;
+    }
+
+  }
+
+  .section-last {
+    //height: 90vh;
+    padding: 20px 0 90px 0;
+    background-size: cover;
+    background-image: linear-gradient(rgba(255,255,255,.97), rgba(255,255,255,.97)), url("images/4K.png") ;
+    text-align: center;
+
+    .product-last-box {
+      width: 100%;
+
+      .product-last {
+        width: 300px;
+        margin: 80px 0 60px 0;
+      }
+
+    }
+  }
+
+  .footer-content {
+    width: 100%;
+  }
+
+  .footer-copy {
+    font-size: 18px;
+  }
+
+  
+}
+
+/* Small Phones to Small Tablets: From 481px to 767px (All Devices less than the Ipad in Portrait Mode which is 768px */
+@media only screen and (max-width: 767px) {
+
+
+}
+
+
+/* Small Phones: From 0 to 480px */
+@media only screen and (max-width: 480px) {
+
+
+}
