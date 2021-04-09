@@ -12,40 +12,25 @@ $-color-black-1: #111111;
 @media only screen and (max-width: 1200px) {
 
   .main-nav {
-    //width: 100%;
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .middle-box {
+
+    width: 100%;
     padding: 0 2%;
 
-    &-list {
-      list-style: none;
-      text-transform: uppercase;
-      font-size: 18px;
+    &-image {
 
-      &-item
-      {
-        display: inline-block;
-        padding: 10px;
-      }
-
-      &-item-link:link,
-      &-item-link:visited
-      {
-        color: $-color-dark-green;
-        text-decoration: none;
-        transition: all .2s;
-      }
-
-      &-item-link:hover,
-      &-item-link:active
-      {
-        color: $-color-sand;
-      }
     }
 
-    .black {
-      background-color: $-color-black-1 !important;
-      font-size: 16px !important;
+    &-description {
+
     }
+
   }
+
 
   .product-box {
 
@@ -86,14 +71,56 @@ $-color-black-1: #111111;
     font-size: 20px;
   }
 
-
-
-
-
   .coffee-images {
     width: 100%;
     //margin: 60px auto -100px auto;
   }
+
+  .coffee-1,
+  .coffee-2 {
+
+    width: 270px;
+
+  }
+
+  .middle-box {
+    flex-direction: column;
+
+    //width: 1140px;
+    width: 100%;
+    padding: 0 2%;
+    //margin: 50px auto 0 auto;
+
+    &-image {
+      width: 60%;
+      text-align: right;
+      padding-bottom: 3%;
+      padding-right: 0;
+
+    }
+
+    &-description {
+
+      width: 80%;
+      font-size: 18px;
+      //flex-basis: 50%;
+      padding-top: 3%;
+      padding-left: 0;
+
+    }
+
+  }
+
+
+  .middle-description {
+    margin-bottom: 30px;
+
+    div {
+
+    }
+  }
+
+
 
   .story-box {
     width: 100%;
@@ -105,10 +132,11 @@ $-color-black-1: #111111;
 
   .story-image {
 
-    flex-basis: 30%;
+    flex-basis: 40%;
     margin-right: 10px;
 
     .bio-image {
+      width: 250px;
     }
 
     .bio-name {
@@ -144,9 +172,6 @@ $-color-black-1: #111111;
   .section-last {
     //height: 90vh;
     padding: 20px 0 90px 0;
-    background-size: cover;
-    background-image: linear-gradient(rgba(255,255,255,.97), rgba(255,255,255,.97)), url("images/4K.png") ;
-    text-align: center;
 
     .product-last-box {
       width: 100%;
@@ -159,12 +184,16 @@ $-color-black-1: #111111;
     }
   }
 
+  .footer {
+    font-size: 18px;
+  }
+
   .footer-content {
     width: 100%;
   }
 
   .footer-copy {
-    font-size: 18px;
+
   }
 
   
@@ -173,12 +202,329 @@ $-color-black-1: #111111;
 /* Small Phones to Small Tablets: From 481px to 767px (All Devices less than the Ipad in Portrait Mode which is 768px */
 @media only screen and (max-width: 767px) {
 
+  .main-nav {
+    //text-align: center;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .main-nav-list {
+    display: none;
+  }
+
+  .header-logo {
+    padding-top: 10px;
+    width: 150px;
+  }
+
+  .product-box {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .product-image {
+    width: 200px;
+    display: block;
+  }
+
+  .heading-one {
+    font-size: 34px;
+
+    &-span-1 {
+      font-size: 20px;
+
+    }
+
+    &-span-2 {
+      font-size: 18px;
+    }
+  }
+
+
+
+  .heading-two {
+    font-size: 30px;
+  }
+
+  .para-copy {
+    width: 100%;
+    font-size: 18px;
+    padding: 0 2%;
+  }
+
+  .image-separator {
+    height: 18px;
+  }
+
+  .coffee-images {
+    //flex-direction: column;
+  }
+
+  .coffee-1,
+  .coffee-2 {
+    width: 220px;
+  }
+
+  .middle-box {
+
+    &-image {
+        width: 70%;
+    }
+
+    &-description {
+      //font-size: 16px;
+
+    }
+  }
+
+  .middle-image {
+    //width: 120%;
+  }
+
+  .middle-description {
+    margin-bottom: 20px;
+
+    div {
+
+      height: 40px;
+      width: 40px;
+      font-size: 20px;
+      margin-right: 15px;
+    }
+  }
+
+  .story-box {
+    //width: 1000px;
+    //margin: 30px auto 0 auto;
+
+    flex-direction: column;
+
+    font-size: 18px;
+
+  }
+
+  .story-image {
+
+    margin-bottom: 20px;
+
+    .bio-image {
+      width: 200px;
+    }
+
+    .bio-name {
+    }
+
+    .bio-title {
+    }
+
+  }
+
+  .section-last {
+    padding: 10px 0 90px 0;
+
+    .product-last-box {
+
+      .product-last {
+        width: 200px;
+        margin: 80px 0 60px 0;
+      }
+
+    }
+  }
+
+  .footer {
+    font-size: 16px;
+
+  }
+
+  .footer-box {
+    flex-direction: column;
+    //justify-content: center;
+    //align-items: center;
+    //width: 100%;
+    //margin: 0 auto;
+    //text-align: center;
+  }
+
+  .footer-box-left {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    display: flex;
+    //justify-content: space-evenly;
+    //justify-content: space-around;
+  }
+
+  .footer-box-right {
+    //width: 100%;
+    //margin: 0 auto;
+    display: flex;
+    //justify-content: space-around;
+    //justify-content: space-evenly;
+    //justify-content: space-around;
+  }
+
+  .footer-item {
+    //width: 100%;
+    width: 50%;
+    text-align: center;
+  }
+
+  .footer-logo {
+    width: 90px;
+  }
+
+
+
 
 }
 
 
 /* Small Phones: From 0 to 480px */
 @media only screen and (max-width: 480px) {
+  .header-logo {
+    width: 100px;
+  }
+
+  .product-image {
+    width: 120px;
+    display: block;
+  }
+
+  .heading-one {
+    font-size: 30px;
+
+    &-span-1 {
+      font-size: 18px;
+    }
+
+    &-span-2 {
+      font-size: 15px;
+    }
+  }
+
+
+
+  .heading-two {
+    font-size: 24px;
+  }
+
+  .para-copy {
+    font-size: 16px;
+  }
+
+  .image-separator {
+    height: 16px;
+  }
+
+  .coffee-images {
+    //flex-direction: column;
+  }
+
+  .coffee-1,
+  .coffee-2 {
+    width: 150px;
+  }
+
+  .section-two {
+    padding: 50px 0;
+  }
+
+  .middle-box {
+
+    &-image {
+      width: 90%;
+    }
+
+    &-description {
+      font-size: 15px;
+    }
+  }
+
+  .middle-description {
+    margin-bottom: 15px;
+
+    div {
+      height: 30px;
+      width: 30px;
+      font-size: 16px;
+      margin-right: 10px;
+      padding: 2px;
+    }
+  }
+
+  .story-box {
+
+    font-size: 15px;
+    padding: 4%;
+
+  }
+
+  .story-image {
+
+    margin-bottom: 20px;
+
+    .bio-image {
+      width: 150px;
+    }
+
+    .bio-name {
+    }
+
+    .bio-title {
+    }
+
+  }
+
+  .story-description {
+    //width: 90%;
+
+    .story-para {
+      width: 80%;
+      padding: 40px 5px;
+    }
+
+    .story-para::before {
+      font-size: 160px;
+      top: -80px;
+      left: -35px;
+    }
+
+  }
+
+.section-last {
+  padding: 5px 0 60px 0;
+
+  .product-last-box {
+
+    .product-last {
+      width: 150px;
+      margin: 60px 0 40px 0;
+    }
+
+  }
+}
+
+  .footer {
+    font-size: 15px;
+
+  }
+
+  .footer-logo {
+    width: 75px;
+  }
+
+
+
+
 
 
 }

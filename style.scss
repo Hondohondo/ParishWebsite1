@@ -18,6 +18,8 @@ $-color-black-1: #111111;
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
 }
 
 body {
@@ -46,7 +48,7 @@ body {
   //width: 1000px;
   width: 1140px;
   margin: 0 auto;
-  color: $-color-black-1;
+  //color: $-color-black-1;
   color: $-color-dark-green;
   justify-content: space-between;
   align-items: center;
@@ -285,6 +287,7 @@ body {
 
 .middle-description {
   margin-bottom: 40px;
+  display: flex;
 
   div {
     color: $-color-dark-green;
@@ -296,7 +299,7 @@ body {
     width: 50px;
     text-align: center;
     padding: 5px;
-    float: left;
+    //float: left;
     font-size: 24px;
     margin-right: 25px;
   }
@@ -414,8 +417,8 @@ body {
   padding: 30px;
   background-color: $-color-black-1;
   font-size: 20px;
-
 }
+
 .footer-content {
   width: 1000px;
   margin: 0 auto;
@@ -457,7 +460,7 @@ body {
 .footer-copy {
   margin-top: 40px;
   text-align: center;
-  font-size: 20px;
+  //font-size: 20px;
   color: $-color-white;
 }
 

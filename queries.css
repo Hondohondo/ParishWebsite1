@@ -4,30 +4,14 @@
 /*Our container is 1140px - we want the website to change look when it gets close to this value (1140px)-so that we always have some margins on the right and left side*/
 @media only screen and (max-width: 1200px) {
   .main-nav {
+    width: 100%;
     padding: 0 2%;
   }
-  .main-nav-list {
-    list-style: none;
-    text-transform: uppercase;
-    font-size: 18px;
-  }
-  .main-nav-list-item {
-    display: inline-block;
-    padding: 10px;
-  }
-  .main-nav-list-item-link:link, .main-nav-list-item-link:visited {
-    color: #274438;
-    text-decoration: none;
-    transition: all 0.2s;
-  }
-  .main-nav-list-item-link:hover, .main-nav-list-item-link:active {
-    color: #CEC3AE;
-  }
-  .main-nav .black {
-    background-color: #111111 !important;
-    font-size: 16px !important;
-  }
 
+  .middle-box {
+    width: 100%;
+    padding: 0 2%;
+  }
   .product-box {
     width: 100%;
     padding: 0 2%;
@@ -57,6 +41,32 @@
     width: 100%;
   }
 
+  .coffee-1,
+.coffee-2 {
+    width: 270px;
+  }
+
+  .middle-box {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 2%;
+  }
+  .middle-box-image {
+    width: 60%;
+    text-align: right;
+    padding-bottom: 3%;
+    padding-right: 0;
+  }
+  .middle-box-description {
+    width: 80%;
+    font-size: 18px;
+    padding-top: 3%;
+    padding-left: 0;
+  }
+
+  .middle-description {
+    margin-bottom: 30px;
+  }
   .story-box {
     width: 100%;
     padding: 2%;
@@ -64,8 +74,11 @@
   }
 
   .story-image {
-    flex-basis: 30%;
+    flex-basis: 40%;
     margin-right: 10px;
+  }
+  .story-image .bio-image {
+    width: 250px;
   }
   .story-description {
     flex-basis: 50%;
@@ -86,9 +99,6 @@
 
   .section-last {
     padding: 20px 0 90px 0;
-    background-size: cover;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.97)), url("images/4K.png");
-    text-align: center;
   }
   .section-last .product-last-box {
     width: 100%;
@@ -98,15 +108,232 @@
     margin: 80px 0 60px 0;
   }
 
+  .footer {
+    font-size: 18px;
+  }
+
   .footer-content {
     width: 100%;
   }
-
-  .footer-copy {
-    font-size: 18px;
-  }
 }
 /* Small Phones to Small Tablets: From 481px to 767px (All Devices less than the Ipad in Portrait Mode which is 768px */
+@media only screen and (max-width: 767px) {
+  .main-nav {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .main-nav-list {
+    display: none;
+  }
+
+  .header-logo {
+    padding-top: 10px;
+    width: 150px;
+  }
+
+  .product-box {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-image {
+    width: 200px;
+    display: block;
+  }
+
+  .heading-one {
+    font-size: 34px;
+  }
+  .heading-one-span-1 {
+    font-size: 20px;
+  }
+  .heading-one-span-2 {
+    font-size: 18px;
+  }
+
+  .heading-two {
+    font-size: 30px;
+  }
+
+  .para-copy {
+    width: 100%;
+    font-size: 18px;
+    padding: 0 2%;
+  }
+
+  .image-separator {
+    height: 18px;
+  }
+
+  .coffee-1,
+.coffee-2 {
+    width: 220px;
+  }
+
+  .middle-box-image {
+    width: 70%;
+  }
+  .middle-description {
+    margin-bottom: 20px;
+  }
+  .middle-description div {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    margin-right: 15px;
+  }
+
+  .story-box {
+    flex-direction: column;
+    font-size: 18px;
+  }
+
+  .story-image {
+    margin-bottom: 20px;
+  }
+  .story-image .bio-image {
+    width: 200px;
+  }
+  .section-last {
+    padding: 10px 0 90px 0;
+  }
+  .section-last .product-last-box .product-last {
+    width: 200px;
+    margin: 80px 0 60px 0;
+  }
+
+  .footer {
+    font-size: 16px;
+  }
+
+  .footer-box {
+    flex-direction: column;
+  }
+
+  .footer-box-left {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    display: flex;
+  }
+
+  .footer-box-right {
+    display: flex;
+  }
+
+  .footer-item {
+    width: 50%;
+    text-align: center;
+  }
+
+  .footer-logo {
+    width: 90px;
+  }
+}
 /* Small Phones: From 0 to 480px */
+@media only screen and (max-width: 480px) {
+  .header-logo {
+    width: 100px;
+  }
+
+  .product-image {
+    width: 120px;
+    display: block;
+  }
+
+  .heading-one {
+    font-size: 30px;
+  }
+  .heading-one-span-1 {
+    font-size: 18px;
+  }
+  .heading-one-span-2 {
+    font-size: 15px;
+  }
+
+  .heading-two {
+    font-size: 24px;
+  }
+
+  .para-copy {
+    font-size: 16px;
+  }
+
+  .image-separator {
+    height: 16px;
+  }
+
+  .coffee-1,
+.coffee-2 {
+    width: 150px;
+  }
+
+  .section-two {
+    padding: 50px 0;
+  }
+
+  .middle-box-image {
+    width: 90%;
+  }
+  .middle-box-description {
+    font-size: 15px;
+  }
+
+  .middle-description {
+    margin-bottom: 15px;
+  }
+  .middle-description div {
+    height: 30px;
+    width: 30px;
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 2px;
+  }
+
+  .story-box {
+    font-size: 15px;
+    padding: 4%;
+  }
+
+  .story-image {
+    margin-bottom: 20px;
+  }
+  .story-image .bio-image {
+    width: 150px;
+  }
+  .story-description .story-para {
+    width: 80%;
+    padding: 40px 5px;
+  }
+  .story-description .story-para::before {
+    font-size: 160px;
+    top: -80px;
+    left: -35px;
+  }
+
+  .section-last {
+    padding: 5px 0 60px 0;
+  }
+  .section-last .product-last-box .product-last {
+    width: 150px;
+    margin: 60px 0 40px 0;
+  }
+
+  .footer {
+    font-size: 15px;
+  }
+
+  .footer-logo {
+    width: 75px;
+  }
+}
 
 /*# sourceMappingURL=queries.css.map */
